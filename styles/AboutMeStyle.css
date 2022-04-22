@@ -274,11 +274,12 @@ of an element should be placed in the 3d - space
 */
 #card{
     width: 200px;
-    height: 250px;
+    height: 270px;
     position: relative;
     text-align: center;
     transition: transform 0.5s;
     transform-style: preserve-3d;
+    
 }
 /* Will focus on horizontal flip card */
 /*
@@ -303,10 +304,17 @@ the rotate() function from transform
     -moz-backface-visibility: hidden;
 }
 #front{
-    background-color: darkgoldenrod;
+    background-color: rgb(58, 66, 221);
+    border: 2px solid white;
+
 }
 #back{
     background-color: rgb(79, 68, 47);
     color: white;
     transform: rotateY(180deg);
+    border: 2px solid white
+}
+
+.img{
+    border-radius: 10px;
 }

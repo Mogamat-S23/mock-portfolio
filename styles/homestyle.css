@@ -1,0 +1,273 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+  }
+  
+  body, html {
+      height: 100%;
+  }
+  
+  pre {
+      
+  white-space: pre-wrap;
+  /* font-family:'helvetica', arial; */
+  font-family:arial;	
+  color:white;
+  font-size: 18px;
+  font-weight:900;
+      
+      
+  }
+  
+  
+  body
+  {
+  font-family:arial;	
+  color:white;
+  font-size: 21px;
+  font-weight:900;	
+  align-items: center;
+  align-content: center;
+      
+      
+  }
+  .color{
+      color: red;
+  }
+  
+  
+  
+  
+  header
+  
+  {
+  display:flex;
+  height:auto;
+  background:black;	
+  justify-content:center;	
+  
+  
+      
+      
+  }
+  
+  .head-container
+  
+  {
+  display:flex;	
+  flex-basis:800px;	
+  height:auto;
+  /* background:green;	 */
+  justify-content: space-between;	
+  align-items:center;	
+  position: fixed;
+      
+  }
+  
+  
+  .logo
+  
+  {
+  width:auto;
+  height:auto;
+  /* background:red;	 */
+  padding: 2px;
+  
+  
+  }
+  
+  
+  
+  .nav{ 
+               float: left;
+               padding: 0px;
+               width: 990px;
+               height: 57px;
+               display:block;
+               color:white;
+               overflow:hidden;
+               align-items: center;
+               justify-content: space-around;
+               position: fixed;
+               
+              
+               
+               
+  }
+  
+  ul{  
+      float : left;
+      list-style: none;
+      margin: 0px;
+      padding: 0px;
+      text-align: center;
+      overflow: hidden;
+     
+  }
+  
+  li{ 
+      display: block;
+      text-align: center;
+      float: left;
+      background-color: black;
+      margin-right: 20px;
+
+  }
+  
+  li a{ 
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 20px;
+        display: block;
+        /* background-color: black; */
+        padding: 14px 60xp;
+        
+
+    }
+  li a:hover{
+    background-color: blue;
+    text-decoration: underline;
+}
+  
+  a{ padding : 1px;
+     
+  }
+  
+  .s1{
+    position: relative;
+}
+.s1:hover .s2{
+    display: block;
+}
+/* .s1 ul li:hover .s2{
+    display: block;
+    padding: 10px;
+} */
+.s2{
+    position: absolute;
+    display: none;
+
+    
+}
+.c1{
+    position: relative;
+}
+.c1:hover .c2{
+    display: block;
+}
+.c2{
+    position: absolute;
+    display: none;
+    
+}
+
+  
+  .hero-container
+  {
+      
+      
+  display:flex;
+  background-image: url(/images/landingpage.png);
+  background-size: cover ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height:800px;
+  background-position:center;	
+  justify-content:center;
+  align-items: center;
+  overflow:hidden; 
+  
+  
+  
+  } 
+  
+   .hero-inner
+  
+  {
+  display:flex;
+  flex-basis:800px;
+  height: 500px;
+  /* background:red;	 */
+  justify-content:flex-start;
+  align-items: flex-top;
+  margin-right: 3%;	
+      
+  }
+  
+  .hero-text-box
+  
+  {
+  width:auto;
+  height:auto;	
+  overflow:hidden;
+      
+       
+  } 
+  
+
+  footer{
+      background-color: black;
+      text-align: center;
+      margin-top: 25%;
+      position: fixed;
+  }
+  
+
+  .wrapper{
+    display: inline-flex;
+}
+.wrapper .static-txt{
+    color: white;
+    font-size: 66px;
+    font-weight: bold;
+    margin: 4px;
+}
+.wrapper .dynamic-txt{
+    margin-left: 15px;
+    line-height: 90px;
+    height: 90px;
+    overflow: hidden;
+}
+.dynamic-txt li{
+    list-style: none;
+    font-size: 66px;
+    font-weight: bold;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite;
+}
+@keyframes slide{
+    100%{
+        top: -360px;
+}
+}
+.dynamic-txt li span{
+    position: relative;
+}
+.dynamic-txt li span::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: black;
+    padding: 8px;
+    border-left: 2px solid rgb(58, 69, 221);
+    animation: typing 1.5s steps(10) infinite;
+}
+@keyframes typing{
+    90%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+
+
+
+
+
+
+

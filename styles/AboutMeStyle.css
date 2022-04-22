@@ -1,0 +1,311 @@
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+body, html {
+    height: 100%;
+}
+
+pre {
+	
+white-space: pre-wrap;
+font-family:'helvetica', arial;
+font-family:arial;	
+color:white;
+font-size: 18px;
+font-weight:900;
+	
+	
+}
+
+
+body
+{
+font-family:arial;	
+color:white;
+font-size: 21px;
+font-weight:900;	
+	
+	
+}
+
+
+
+
+header
+
+{
+display:flex;
+height:auto;
+background:black;	
+justify-content:center;	
+	
+	
+}
+
+.head-container
+
+{
+display:flex;	
+flex-basis:800px;	
+height:auto;
+/* background:green;	 */
+justify-content: space-between;	
+align-items:center;	
+	position: fixed;
+}
+
+
+.logo
+
+{
+width:auto;
+height:auto;
+/* background:red;	 */
+padding:20px;
+
+}
+
+
+
+.nav{ 
+             float: left;
+			 padding: 0px;
+			 width: 990px;
+			 height: 57px;
+			 display:block;
+			 color:white;
+			 overflow:hidden;
+			 
+}
+
+ul{  
+    float : left;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	overflow: hidden;
+}
+
+li{ 
+    display: block;
+	text-align: center;
+	float: left;
+	background-color: black;
+	margin-right: 20px;
+}
+
+li a{ 
+      color: white;
+	  text-decoration: none;
+	  text-transform: uppercase;
+	  font-size: 20px;
+	  display: block;
+	  background-color: black;
+	  padding: 14px 60xp;
+}
+
+li a:hover{
+    background-color: blue;
+    text-decoration: underline;
+}
+  
+  a{ padding : 1px;
+     
+  }
+  
+  .s1{
+    position: relative;
+}
+.s1:hover .s2{
+    display: block;
+}
+/* .s1 ul li:hover .s2{
+    display: block;
+    padding: 10px;
+} */
+.s2{
+    position: absolute;
+    display: none;
+
+    
+}
+.c1{
+    position: relative;
+}
+.c1:hover .c2{
+    display: block;
+}
+.c2{
+    position: absolute;
+    display: none;
+    
+}
+ 
+
+
+
+
+
+
+.hero-container
+{
+	
+	
+display:flex;
+background-image: url(/images/theabout.png);
+background-size: cover ;
+background-repeat: no-repeat;
+background-attachment: fixed;
+min-height:1400px;
+background-position:center;	
+justify-content:center;
+align-items: center;
+overflow:hidden;
+
+
+}
+
+
+
+.hero-inner
+
+{
+display:flex;
+flex-basis:800px;
+height: 1200px;
+/* background:red;	 */
+justify-content:flex-start;
+align-items: flex-start;	
+	
+}
+
+.hero-text-box
+
+{
+width:auto;
+height:auto;	
+overflow:hidden;
+	
+	
+}
+
+
+.mid-container
+
+{
+	
+display:flex;
+height:1200px;
+/* background:blue;	 */
+justify-content:space-between;		
+flex-direction:row;	
+align-content:flex-start;
+
+flex-wrap:wrap;	
+	
+}
+
+.box > div
+
+{
+display:flex;
+justify-content:center;
+align-items:top;	
+width:40%;
+height:650px;
+/* background:red; */
+color:white;
+font-size:15px;	
+flex-grow:0;
+margin-top:150px;	
+margin-bottom:60px;
+margin-left: 25px;
+margin-right:25px;
+}
+
+h2 { text-align:center;
+}
+
+
+
+
+.container {
+    width: 100%;
+    background-color: #ddd;
+  }
+  
+  .skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+  }
+  
+  .html {width: 90%; background-color: #04AA6D;}
+  .css {width: 80%; background-color: #2196F3;}
+  .js {width: 65%; background-color: #f44336;}
+  .php {width: 60%; background-color: #808080;}
+
+
+#testimonials{
+    text-align: center;
+}
+
+
+.container2 {
+    background-color: rgba(177, 211, 241, 0.2);
+    width: 200px;
+    height: 250px;
+    border-radius: 25%;
+    margin: 20px auto;
+}
+/*
+- Transition do provide ways to control the speed of our animation when changing CSS properties.
+- Transform-style: This property will verify
+if the children of an element are positioned
+in the 3d space or 2d.
+The value: preserve-3d state that the children
+of an element should be placed in the 3d - space
+*/
+#card{
+    width: 200px;
+    height: 250px;
+    position: relative;
+    text-align: center;
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
+}
+/* Will focus on horizontal flip card */
+/*
+It easy to rotate an html element by using
+the rotate() function from transform
+*/
+.container2:hover #card{
+    transform: rotateY(180deg);
+}
+/* Positioning card front and card back*/
+#front, #back {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    border-radius: 20%;
+    /* Have to cover most of the browsers
+    Defines whether or not the back face of an element should be visible when facing the
+    user
+    */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+}
+#front{
+    background-color: darkgoldenrod;
+}
+#back{
+    background-color: rgb(79, 68, 47);
+    color: white;
+    transform: rotateY(180deg);
+}

@@ -194,20 +194,20 @@ overflow:hidden;
 }
 
 
-.mid-container
+/* .mid-container
 
 {
 	
 display:flex;
 height:1200px;
-/* background:blue;	 */
+
 justify-content:space-between;		
 flex-direction:row;	
 align-content:flex-start;
 
 flex-wrap:wrap;	
 	
-}
+} */
 
 .box > div
 
@@ -217,7 +217,7 @@ justify-content:center;
 align-items:top;	
 width:40%;
 height:650px;
-/* background:red; */
+
 color:white;
 font-size:15px;	
 flex-grow:0;
@@ -233,7 +233,7 @@ h2 { text-align:center;
 
 
 
-.container {
+.container1 {
     width: 100%;
     background-color: #ddd;
   }
@@ -251,17 +251,18 @@ h2 { text-align:center;
   .php {width: 60%; background-color: #808080;}
 
 
-#testimonials{
-    text-align: center;
-}
-
-
-.container2 {
+  /* #wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    
+} */
+.container {
     background-color: rgba(177, 211, 241, 0.2);
     width: 200px;
     height: 250px;
     border-radius: 25%;
     margin: 20px auto;
+   
 }
 /*
 - Transition do provide ways to control the speed of our animation when changing CSS properties.
@@ -276,7 +277,7 @@ of an element should be placed in the 3d - space
     height: 250px;
     position: relative;
     text-align: center;
-    transition: transform 1.5s;
+    transition: transform 0.5s;
     transform-style: preserve-3d;
 }
 /* Will focus on horizontal flip card */
@@ -284,7 +285,7 @@ of an element should be placed in the 3d - space
 It easy to rotate an html element by using
 the rotate() function from transform
 */
-.container2:hover #card{
+.container:hover #card{
     transform: rotateY(180deg);
 }
 /* Positioning card front and card back*/
